@@ -29,3 +29,13 @@ python examples/1_owasp_classifier.py
 - Model Training: ✔️
 - Security Knowledge: ✔️
 - Production Readiness: ✔️
+
+  ## How to run:  
+
+  ### Windows:  
+Right-click → "Run with PowerShell" or:
+
+```powershell
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+.\setup.ps1
+```
