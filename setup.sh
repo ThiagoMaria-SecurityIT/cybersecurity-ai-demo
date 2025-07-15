@@ -1,7 +1,7 @@
 #!/bin/bash
 # Clone repo
-git clone https://github.com/cybersecurity-ai-demo.git
-cd your-repo
+git clone https://github.com/ThiagoMaria-SecurityIT/cybersecurity-ai-demo.git
+cd 
 
 # Create and activate venv
 python -m venv venv
