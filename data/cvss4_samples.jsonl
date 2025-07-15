@@ -1,0 +1,2 @@
+{"description": "RCE in login service", "cvss_score": 9.8, "metrics": {"attack_vector": "Network", "complexity": "Low"}}
+{"description": "CSRF in form submission", "cvss_score": 6.5, "metrics": {"attack_vector": "Adjacent", "complexity": "High"}}
