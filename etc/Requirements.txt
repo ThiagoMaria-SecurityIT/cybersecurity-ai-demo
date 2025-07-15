@@ -1,0 +1,8 @@
+This version will:
+Use GPU if available (with full optimizations)
+Fall back gracefully to CPU
+Prevent GPU-related warnings in CPU mode
+Provide clear visual feedback during execution
+
+
+pip install pandas transformers[torch] datasets accelerate tqdm
