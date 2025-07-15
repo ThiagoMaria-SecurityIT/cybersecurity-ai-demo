@@ -1,4 +1,4 @@
-**Final repository structure** for cybersecurity AI demo repo, with all implemented files marked and validation added:
+## **Final repository structure** for cybersecurity AI demo repo, with all implemented files marked and validation added:  
 
 ```
 cybersecurity-ai-demo/
@@ -94,7 +94,7 @@ cybersecurity-ai-demo/
 ### **Execution Flow**  
 1. **First-Time Setup**  
    ```bash
-   git clone https://github.com/your-repo.git
+   git clone https://github.com/ThiagoMaria-SecurityIT/cybersecurity-ai-demo.git
    cd cybersecurity-ai-demo
    ./setup.sh            # or setup.ps1/setup.bat
    ```
