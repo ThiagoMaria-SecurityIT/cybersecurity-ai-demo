@@ -1,0 +1,6 @@
+Create Demo GIF:
+
+Record terminal with asciinema
+
+```bash
+asciinema rec assets/demo.cast
