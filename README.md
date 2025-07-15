@@ -14,26 +14,52 @@
 - ⚙️ Basic model training process
 - 🔍 Real-time detection examples
 
-  Here's a clear addition for your `README.md` that explains the setup scripts, formatted as a new section:
-
 ---
 
 ### **🚀 One-Click Setup**  
-Here is the automated setup scripts for all major platforms:  
+Get started in seconds with an automated setup scripts for all major platforms:
 
 | Script | Platform | What It Does |  
 |--------|----------|--------------|  
 | [`setup.ps1`](setup.ps1) | **Windows (PowerShell)** | 1. Creates virtual environment<br>2. Installs dependencies<br>3. Verifies installation |  
 | [`setup.bat`](setup.bat) | **Windows (CMD)** | Simple double-click executable for non-technical users |  
-| [`setup.sh`](setup.sh) | **Linux/Mac** | Configures everything with terminal commands |  
+| [`setup.sh`](setup.sh) | **Linux/Mac** | Configures everything with terminal commands |   
 
 **How to use:**  
 1. **PowerShell**: Right-click → _"Run with PowerShell"_  
 2. **CMD**: Double-click `setup.bat`  
-3. **Linux/Mac**: Run in terminal:  
+3. **Linux/Mac**: Run in terminal:
+   
    ```bash  
    chmod +x setup.sh && ./setup.sh  
    ```  
+### Windows Users
+- **PowerShell** (Recommended):  
+  Right-click on [`setup.ps1`](setup.ps1) and select "Run with PowerShell"
+  ```powershell
+  Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+  .\setup.ps1
+  ```
+
+- **Command Prompt (CMD)**:  
+  Simply double-click [`setup.bat`](setup.bat)
+
+### Mac/Linux Users
+Run in terminal:
+```bash
+chmod +x setup.sh && ./setup.sh
+```
+
+📌 **What these scripts do**:
+1. Create isolated Python environment
+2. Install all required packages
+3. Verify successful installation
+4. Show how to run the demo
+
+🔒 **Safety Features**:
+- No admin rights required
+- Doesn't modify system Python
+- Includes dependency verification  
 
 ✅ **Guaranteed isolation** – Installs everything in a self-contained virtual environment.  
 
