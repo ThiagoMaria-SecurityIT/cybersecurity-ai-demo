@@ -14,6 +14,41 @@
 - ⚙️ Basic model training process
 - 🔍 Real-time detection examples
 
+  Here's a clear addition for your `README.md` that explains the setup scripts, formatted as a new section:
+
+---
+
+### **🚀 One-Click Setup**  
+Here is the automated setup scripts for all major platforms:  
+
+| Script | Platform | What It Does |  
+|--------|----------|--------------|  
+| [`setup.ps1`](setup.ps1) | **Windows (PowerShell)** | 1. Creates virtual environment<br>2. Installs dependencies<br>3. Verifies installation |  
+| [`setup.bat`](setup.bat) | **Windows (CMD)** | Simple double-click executable for non-technical users |  
+| [`setup.sh`](setup.sh) | **Linux/Mac** | Configures everything with terminal commands |  
+
+**How to use:**  
+1. **PowerShell**: Right-click → _"Run with PowerShell"_  
+2. **CMD**: Double-click `setup.bat`  
+3. **Linux/Mac**: Run in terminal:  
+   ```bash  
+   chmod +x setup.sh && ./setup.sh  
+   ```  
+
+✅ **Guaranteed isolation** – Installs everything in a self-contained virtual environment.  
+
+---
+
+### Suggested Placement  
+Add this section right after your project description (before "What This Shows").  
+
+**Why This Matters for Recruiters:**  
+- Demonstrates your understanding of **cross-platform compatibility**  
+- Shows you care about **user experience** (non-technical users can test your work)  
+- Highlights **production-ready practices** (isolated environments, verification steps)  
+
+Would you like me to provide the exact Markdown to copy-paste into your existing `README.md`? I can match your current formatting style.
+
 ## Try It Yourself
 ```bash
 python examples/1_owasp_classifier.py
@@ -30,12 +65,4 @@ python examples/1_owasp_classifier.py
 - Security Knowledge: ✔️
 - Production Readiness: ✔️
 
-  ## How to run:  
 
-  ### Windows:  
-Right-click → "Run with PowerShell" or:
-
-```powershell
-Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
-.\setup.ps1
-```
