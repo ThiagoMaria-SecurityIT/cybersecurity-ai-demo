@@ -1,14 +1,13 @@
 import pandas as pd
 from sklearn.ensemble import RandomForestRegressor
+from joblib import dump
 
-# Load CVSS data
+# Load and prepare data
 df = pd.read_json("../data/cvss4_samples.jsonl", lines=True)
+X = pd.json_normalize(df["metrics"])  # Flatten nested JSON
+y = df["cvss_score"]
 
-# Train score predictor
+# Train and save
 model = RandomForestRegressor()
-model.fit(pd.json_normalize(df["metrics"]), df["cvss_score"])
-
-# Predict new vulnerability
-new_case = [{"attack_vector": "Network", "complexity": "Low"}]
-pred_score = model.predict(new_case)[0]
-print(f"Predicted CVSS 4.0 Score: {pred_score:.1f}")
+model.fit(X, y)
+dump(model, "../cvss_model.joblib") 
