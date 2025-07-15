@@ -17,3 +17,15 @@
 ## Try It Yourself
 ```bash
 python examples/1_owasp_classifier.py
+```
+
+## AI in Cybersecurity
+- This mimics how SOC analysts train systems to detect:
+  - Injection attacks (OWASP #1 risk)
+  - Vulnerability severity (CVSS scores)
+- Real-world systems process millions of such samples daily
+
+  ## Skills Demonstrated
+- Model Training: ✔️
+- Security Knowledge: ✔️
+- Production Readiness: ✔️
