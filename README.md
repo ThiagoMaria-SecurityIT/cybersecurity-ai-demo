@@ -2,8 +2,7 @@
 
 ## Transparency:
 - Made with the help of AI 
-- Date this repo was created: July 14, 2025  
-
+- Date this repo was created: July 14, 2025   
 
 ## This repository demonstrates how AI can detect security threats using:
 - **OWASP Top 10** (Common web attacks)
@@ -30,7 +29,13 @@ Get started in seconds with an automated setup scripts for all major platforms:
 |--------|----------|--------------|  
 | [`setup.ps1`](setup.ps1) | **Windows (PowerShell)** | 1. Creates virtual environment<br>2. Installs dependencies<br>3. Verifies installation |  
 | [`setup.bat`](setup.bat) | **Windows (CMD)** | Simple double-click executable for non-technical users |  
-| [`setup.sh`](setup.sh) | **Linux/Mac** | Configures everything with terminal commands |   
+| [`setup.sh`](setup.sh) | **Linux/Mac** | Configures everything with terminal commands |    
+
+## 🧪 Validation Test
+After setup, verify everything works:
+```bash
+python test_install.py
+```  
 
 **How to use:**  
 1. **PowerShell**: Right-click → _"Run with PowerShell"_  
