@@ -9,7 +9,8 @@
 
 
 > [!Caution]
-> UNDER DEVELOPMENT - JULY 15, 2025
+> - UNDER DEVELOPMENT - JULY 15, 2025  
+> - ISO/IEC CD 27091 and ISO/IEC DIS 27090 are both under development too
 
 
 
