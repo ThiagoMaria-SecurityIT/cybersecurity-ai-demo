@@ -9,6 +9,13 @@
 - **OWASP Top 10** (Common web attacks)
 - **CVSS 4.0** (Scoring system for vulnerabilities)
 
+```mermaid
+  graph TD
+    A[1_owasp_classifier.py] -->|Generates Model| C[3_live_detection.py]
+    B[2_cvss_predictor.py] -->|Generates Model| C
+    C --> D[assets/detection_example.gif]  
+```
+
 ## What This Shows
 - 🛡️ How AI learns patterns in cyber threats
 - ⚙️ Basic model training process
