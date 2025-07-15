@@ -1,7 +1,7 @@
 @echo off
 :: Clone repo
-git clone https://github.com/your-repo.git
-cd your-repo
+git clone https://github.com/ThiagoMaria-SecurityIT/cybersecurity-ai-demo.git
+cd 
 
 :: Create and activate venv
 python -m venv venv
