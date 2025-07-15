@@ -1,0 +1,3 @@
+{"text": "SELECT * FROM users WHERE id = 1 OR 1=1", "label": "SQLi", "owasp_category": "A03-Injection"}
+{"text": "<script>alert('XSS')</script>", "label": "XSS", "owasp_category": "A02-Cryptofail"}
+{"text": "GET /wp-admin", "label": "Benign", "owasp_category": null}
