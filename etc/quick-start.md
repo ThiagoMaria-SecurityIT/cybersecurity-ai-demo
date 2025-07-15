@@ -109,4 +109,53 @@ To run **without errors**, you need:
 If errors occur:
 1. Verify virtual environment is activated
 2. Check `data/` files have valid JSONL format
-3. Ensure all scripts run from repo root
+3. Ensure all scripts run from repo root  
+
+
+This warning occurs because you're trying to use GPU memory pinning (`pin_memory=True`) but don't have a CUDA-enabled GPU available. Here's how to fix it:
+
+### **Solution 1: Disable pin_memory (Recommended for CPU-only)**
+Modify your `TrainingArguments` in `1_owasp_classifier.py`:
+```python
+training_args = TrainingArguments(
+    output_dir="../owasp_model",
+    per_device_train_batch_size=8,
+    num_train_epochs=3,
+    save_strategy="epoch",
+    dataloader_pin_memory=False  # Add this line
+)
+```
+
+### **Solution 2: If you have a GPU**
+1. Install CUDA-compatible PyTorch:
+```bash
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+```
+
+2. Verify GPU availability:
+```python
+import torch
+print(torch.cuda.is_available())  # Should return True
+```
+
+### **Why This Happens**
+- `pin_memory=True` is default in Hugging Face to speed up GPU transfers
+- Without a GPU, this setting has no effect
+- The warning is harmless but can be silenced
+
+### **Updated Full Code**
+```python
+training_args = TrainingArguments(
+    output_dir="../owasp_model",
+    per_device_train_batch_size=8,
+    num_train_epochs=3,
+    save_strategy="epoch",
+    dataloader_pin_memory=False,  # Disabled for CPU
+    no_cuda=not torch.cuda.is_available()  # Automatically detect GPU
+)
+```
+
+This change:
+- Silences the warning
+- Maintains functionality
+- Works for both CPU and GPU environments
