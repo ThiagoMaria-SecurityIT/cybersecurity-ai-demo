@@ -1,4 +1,17 @@
-# AI for Cybersecurity Demo
+# AI for Cybersecurity Demo - Under Development
+
+> [!Warning]
+> - This repo is under development and are not for production  
+> - Please, consider the .gif file (detection_example.gif) has annotations inside and are not a real image file  
+> - Not recommended download this repo today July 15, 2025  
+> - This repo was changed to public today July 15, 2025  
+> - This repo is public so I can use online tools to make it better  
+
+
+> [!Caution]
+> UNDER DEVELOPMENT - JULY 15, 2025
+
+
 
 ## Transparency:
 - Made with the help of AI 
