@@ -1,5 +1,5 @@
 # Clone repo
-git clone https://github.com/your-repo.git
+git clone https://github.com/cybersecurity-ai-demo.git
 cd your-repo
 
 # Create and activate venv
