@@ -1,13 +1,21 @@
-from transformers import pipeline
+from transformers import AutoTokenizer, AutoModelForSequenceClassification
 from datasets import load_dataset
+import torch
 
-# Load sample data
+# Load data
 dataset = load_dataset("json", data_files="../data/owasp10_samples.jsonl", split="train")
 
-# Train a simple classifier
-classifier = pipeline("text-classification", model="distilbert-base-uncased")
-classifier.fit(dataset["text"], dataset["label"])
+# Tokenizer and model
+tokenizer = AutoTokenizer.from_pretrained("distilbert-base-uncased")
+model = AutoModelForSequenceClassification.from_pretrained(
+    "distilbert-base-uncased", 
+    num_labels=len(set(dataset["label"]))
+)
 
-# Test prediction
-result = classifier("admin'--")
-print(f"Detected: {result[0]['label']} (Confidence: {result[0]['score']:.0%})")
+# Training loop (simplified)
+inputs = tokenizer(dataset["text"], padding=True, truncation=True, return_tensors="pt")
+labels = torch.tensor([{"SQLi": 0, "XSS": 1, "Benign": 2}[x] for x in dataset["label"]])
+
+# Save model
+model.save_pretrained("../owasp_model")
+tokenizer.save_pretrained("../owasp_model")
