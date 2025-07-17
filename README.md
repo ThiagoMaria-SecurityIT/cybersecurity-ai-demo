@@ -99,8 +99,6 @@ Add this section right after your project description (before "What This Shows")
 - Shows you care about **user experience** (non-technical users can test your work)  
 - Highlights **production-ready practices** (isolated environments, verification steps)  
 
-Would you like me to provide the exact Markdown to copy-paste into your existing `README.md`? I can match your current formatting style.
-
 ## Try It Yourself
 ```bash
 python examples/1_owasp_classifier.py
