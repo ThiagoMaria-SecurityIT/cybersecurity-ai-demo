@@ -1,22 +1,43 @@
-# AI for Cybersecurity Demo - Under Development
+
+# AI for Cybersecurity Demo - Under Development  
+
+__Security in Progress__    
+__Just as ISO/IEC CD 27091 and DIS 27090 are under development, these AI models continuously adapt to new threats__    
 
 > [!Warning]
 > - This repo is under development and are not for production  
 > - Please, consider the .gif file (detection_example.gif) has annotations inside and are not a real image file  
-> - Not recommended download this repo today July 15, 2025  
+> - Not recommended download this repo until finished (feel free to download but it's not 100% working and may have bugs)   
 > - This repo was changed to public today July 15, 2025  
 > - This repo is public so I can use online tools to make it better  
 
 
 > [!Caution]
-> - UNDER DEVELOPMENT - JULY 15, 2025  
+> - UNDER DEVELOPMENT - Created July 15, 2025  
 > - ISO/IEC CD 27091 and ISO/IEC DIS 27090 are both under development too
+> - This repo and ISO security standards share one truth: cybersecurity requires constant evolution
+
+---  
 
 
+### Transparency:
+- Made with the help of AI
+  
+---  
 
-## Transparency:
-- Made with the help of AI 
-- Date this repo was created: July 14, 2025   
+## 🔒 AI-Powered Cybersecurity Solutions (OWASP Top 10 + CVSS Framework)  
+🚧 Under Active Development [Created: July 15, 2025] 🚧  
+
+This repository demonstrates practical AI applications for cybersecurity, focusing on OWASP Top 10 vulnerabilities and CVSS risk scoring.   
+You will __not__ find an AI model that creates a complete CVSS risk scoring here because this repo was designed with non-technical stakeholders in mind, it helps:  
+
+• Build enterprise-ready AI security models  
+• Translate technical risks into business insights  
+• Implement defensive AI strategies with clear ROI  
+• Designed to be easy to explain how AI works in Security Information and Cybersecurity fields   
+
+Perfect for security teams, AI practitioners, and decision-makers looking to modernize their cyber defenses.  
+
 
 ## This repository demonstrates how AI can detect security threats using:
 - **OWASP Top 10** (Common web attacks)
