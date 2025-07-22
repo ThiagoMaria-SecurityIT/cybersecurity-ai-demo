@@ -31,7 +31,7 @@ __Just as ISO/IEC CD 27091 and DIS 27090 are under development, these AI models 
 ---  
 
 ## 🔒 AI-Powered Cybersecurity Solutions (OWASP Top 10 + CVSS Framework)  
-🚧 Under Active Development [Created: July 14, 2025] 🚧  
+🚧 Under Active Development - Created: July 14, 2025 🚧  
 
 This repository demonstrates practical AI applications for cybersecurity, focusing on OWASP Top 10 vulnerabilities and CVSS risk scoring.   
 You will __not__ find an AI model that creates a complete CVSS risk scoring here because this repo was designed with non-technical stakeholders in mind, it helps:  
